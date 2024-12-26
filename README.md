@@ -14,9 +14,6 @@ Uma aplicação simples de tabuada, feita com HTML, CSS e JavaScript, para calcu
 - **CSS**: Estilização da página.
 - **JavaScript**: Lógica de cálculo e interação com o usuário.
 
-## 📷 Demonstração
-
-![image](https://github.com/user-attachments/assets/bb88f042-86f6-4c6b-bb22-591ee5fbed5d)
 
 ## 🛠️ Como Usar
 
