@@ -2,15 +2,14 @@
 const multiplicationForm = document.querySelector("#multiplication-form");
 const numberInput = document.querySelector("#number");
 const multiplicationInput = document.querySelector("#multiplicator");
-const multiplicationOperations = document.querySelector(
-  "#multiplication-operations"
-); // Alterado para selecionar o elemento correto
+const multiplicationTitle = document.querySelector("#multiplication-title"); 
+const multiplicationOperations = document.querySelector("#multiplication-operations"); 
 
 // Funções de seleção de elementos
 const createTable = (number, multiplicatorNumber) => {
-  multiplicationOperations.innerHTML = ""; // Limpar o conteúdo anterior
+  multiplicationOperations.innerHTML = ""; 
 
-  for (i = 1; i <= multiplicatorNumber; i++) {
+  for (let i = 1; i <= multiplicatorNumber; i++) { 
     const result = number * i;
 
     const template = `<div class="row">
@@ -21,8 +20,9 @@ const createTable = (number, multiplicatorNumber) => {
     const parser = new DOMParser();
     const htmlTemplate = parser.parseFromString(template, "text/html");
     const row = htmlTemplate.querySelector(".row");
-    multiplicationOperations.appendChild(row); // Adicionado ao elemento correto
+    multiplicationOperations.appendChild(row);
   }
+  multiplicationTitle.innerText = `Tabuada do número: ${number}`; 
 };
 
 // Eventos
